@@ -1,7 +1,7 @@
 /* FORMAT CODE ON GOOGLE SITES
 *
 *  Place your code in an embedded block and type
-*    <script src="index.js"></script>
+*    <script src="https://www.gitcdn.xyz/repo/NURobotics/Google-Sites-Scripts/master/displayCode.js"></script>
 *  at the end to see in formatted
 *   
 *  If you want to add code from a file that's on the internet, just add a 'data-src' attribute with a url to the code and it will be automatically placed in
@@ -51,9 +51,12 @@
 
   // Allows display of line numbers on the code
   preDiv.classList.add('line-numbers');
-  preDiv.setAttribute('data-src', scriptParams.getAttribute('data-src') || '');
   preDiv.classList.add(...codeDiv.classList);
   preDiv.appendChild(codeDiv);
+  
+  if (scriptParams.getAttribute('data-src')) {
+    preDiv.setAttribute('data-src', scriptParams.getAttribute('data-src'));
+  }
 
   // Replaces the old body with the formatted code
   document.body.innerHTML = preDiv.outerHTML;
