@@ -1,7 +1,7 @@
 /* FORMAT CODE ON GOOGLE SITES
 *
 *  Place your code in an embedded block and type
-*    <script src="https://ghcdn.rawgit.org/NURobotics/Google-Sites-Scripts/master/displayCode.js"></script>
+*    <script src="https://gitcdn.link/cdn/NURobotics/Google-Sites-Scripts/master/displayCode.js"></script>
 *  at the end to see in formatted
 *   
 *  If you want to add code from a file that's on the internet, just add a 'data-src' attribute with a url to the code and it will be automatically placed in
